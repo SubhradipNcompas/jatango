@@ -1,0 +1,11 @@
+demo\pageObject\JobTemplete.class
+demo\SimplifyVMSConstants.class
+demo\pageObject\dashBoardXpath.class
+demo\SimplifyVMSGetPropertyValues.class
+demo\pageObject\xls_Reader.class
+demo\pageObject\screenshot_File.class
+demo\stepdefs\loginStepdefination.class
+demo\pageObject\userHomePage.class
+demo\SimplifyVMSBase.class
+demo\pageObject\removerSpace.class
+demo\pageObject\driverStorage.class
