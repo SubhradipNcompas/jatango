@@ -61,7 +61,8 @@ public class LoginPage extends DriverManager {
         if (Sing_In.isDisplayed()) {
             dashBoardXpath.clickOnAfterElementIsVisible(Sing_In);
             Thread.sleep(3000);
-            if(CaptchaTextBox.isDisplayed()){
+            try{
+            if(!CaptchaTextBox.isDisplayed()){
                 WebElement element=driver.findElement(By.xpath("/html/body/div/main/section/div/div/div/div[1]/div/form/div[1]/div/div[2]/div[1]/img"));
                 File src=element.getScreenshotAs(OutputType.FILE);
                 String Path="./Screenshots/capture.png";
@@ -73,6 +74,11 @@ public class LoginPage extends DriverManager {
                 Thread.sleep(3000);
                 dashBoardXpath.enterValue(CaptchaTextBox,str);
                 Thread.sleep(5000);
+            }else{
+                System.out.println("CaptchaTextBox not view");
+            }
+            }catch (Exception e){
+                System.out.println("CaptchaTextBox not view");
             }
             dashBoardXpath.enterValue(dashBoardXpath.Password, reader.getCellData("Login", "PASSWORD", 2));
             TestBase.getImplicitewait();

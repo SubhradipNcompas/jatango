@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="">
+    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="2nd commend">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pageObject/projectAllXpath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pageObject/projectAllXpath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +84,7 @@
       <recent name="demo.pageObject" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.product">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="Feature: shows" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/shows.feature" />
@@ -167,9 +166,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.product" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="JUnit.login" />
+        <item itemvalue="JUnit.product" />
         <item itemvalue="JUnit.shows" />
         <item itemvalue="Cucumber Java.Feature: shows" />
       </list>
@@ -184,6 +183,15 @@
       <option name="presentableId" value="Default" />
       <updated>1638255193806</updated>
     </task>
+    <task id="LOCAL-00001" summary="2nd commend">
+      <option name="closed" value="true" />
+      <created>1726309937387</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726309937387</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,5 +204,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2nd commend" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd commend" />
   </component>
 </project>
