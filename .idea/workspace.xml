@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="" />
+    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pageObject/projectAllXpath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pageObject/projectAllXpath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +25,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SubhradipNcompas&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -28,6 +39,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SubhradipNcompas/jatango.git&quot;,
+    &quot;accountId&quot;: &quot;7b1e03b7-b542-44fb-9091-03cebf9e7432&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -36,24 +53,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cucumber Java.Feature: Product.executor": "Run",
-    "Cucumber Java.Feature: shows.executor": "Run",
-    "Cucumber Java.Scenario: Successfully create a new product.executor": "Run",
-    "Cucumber Java.Scenario: Successfully create a new show.executor": "Run",
-    "Cucumber Java.Scenario: Verify whether User is able to access the application.executor": "Run",
-    "JUnit.Runner (1).executor": "Run",
-    "JUnit.Runner.executor": "Run",
-    "JUnit.login.executor": "Run",
-    "JUnit.product.executor": "Run",
-    "JUnit.shows.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/planit-web-test"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: Product.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: shows.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Successfully create a new product.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Successfully create a new show.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Verify whether User is able to access the application.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Runner (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Runner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.login.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.product.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.shows.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/planit-web-test&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\jatango\src\test\resources\All_PhotoAnd_Biodate" />

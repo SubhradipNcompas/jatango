@@ -9,6 +9,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +40,9 @@ public class projectAllXpath extends userHomePage {
     public static WebElement Sing_In;
     @FindBy(how = How.XPATH, using = "//button[contains(text(),'Log In')]")
     public static WebElement Log_In;
+    @FindBy(how = How.XPATH, using = "//*[@id='captcha'][@type='text']")
+    public static WebElement CaptchaTextBox;
+
 
     //***********************Create Product Page****************************************************************************
     @FindBy(how = How.XPATH, using = "//body/div[@id='__next']/div[1]/main[1]/div[2]/div[1]/div[1]/div/p[1]")
@@ -267,6 +274,20 @@ public class projectAllXpath extends userHomePage {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.open('');");
         Thread.sleep(100);
+    }
+
+    private static BufferedImage cropImage(File filePath, int x, int y, int w,
+                                           int h) {
+
+        try {
+            BufferedImage originalImgage = ImageIO.read(filePath);
+            BufferedImage subImgage = originalImgage.getSubimage(x, y, w, h);
+
+            return subImgage;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
 

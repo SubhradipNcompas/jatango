@@ -9,11 +9,20 @@ import demo.pageObject.xls_Reader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import net.sourceforge.tess4j.ITesseract;
+import net.sourceforge.tess4j.Tesseract;
 import org.apache.http.util.Asserts;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
+
+import javax.imageio.ImageIO;
+
+import java.awt.*;
+import java.io.File;
 
 import static demo.pageObject.projectAllXpath.*;
 
@@ -44,13 +53,27 @@ public class LoginPage extends DriverManager {
         dashBoardXpath.enterValue(dashBoardXpath.Username, reader.getCellData("Login", "USERNAME", 2));
         TestBase.getImplicitewait();
         System.out.println("   Enter UserName is:  " + reader.getCellData("Login", "USERNAME", 2));
+
     }
 
     @Then("Enter Password")
     public void enter_password() throws Exception {
         if (Sing_In.isDisplayed()) {
             dashBoardXpath.clickOnAfterElementIsVisible(Sing_In);
-            TestBase.getImplicitewait();
+            Thread.sleep(3000);
+            if(CaptchaTextBox.isDisplayed()){
+                WebElement element=driver.findElement(By.xpath("/html/body/div/main/section/div/div/div/div[1]/div/form/div[1]/div/div[2]/div[1]/img"));
+                File src=element.getScreenshotAs(OutputType.FILE);
+                String Path="./Screenshots/capture.png";
+                FileHandler.copy(src,new File(Path));
+                Thread.sleep(3000);
+                ITesseract image= new Tesseract();
+                String str=image.doOCR(new File(Path));
+                System.out.println("Image OCR done: "+str);
+                Thread.sleep(3000);
+                dashBoardXpath.enterValue(CaptchaTextBox,str);
+                Thread.sleep(5000);
+            }
             dashBoardXpath.enterValue(dashBoardXpath.Password, reader.getCellData("Login", "PASSWORD", 2));
             TestBase.getImplicitewait();
             System.out.println(" Enter The Password is: " + reader.getCellData("Login", "PASSWORD", 2));
