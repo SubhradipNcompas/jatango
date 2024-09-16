@@ -12,22 +12,9 @@ import demo.pageObject.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.poi.ss.formula.functions.T;
-import org.checkerframework.checker.units.qual.C;
-import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.asserts.SoftAssert;
-
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.Set;
-
 import static demo.pageObject.projectAllXpath.*;
-import static demo.pageObject.projectAllXpath.CreateProductNew;
-import static groovy.xml.Entity.quot;
-import static java.awt.SystemColor.window;
+
 
 public class Shows extends DriverManager {
 

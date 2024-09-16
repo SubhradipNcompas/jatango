@@ -30,14 +30,14 @@
 
 		<scripts>
 
-<![CDATA[
+			<![CDATA[
 $(document).ready(function() {
 });
 ]]>
 		</scripts>
 		<!-- custom styles -->
 		<styles>
-<![CDATA[
+			<![CDATA[
 ]]>
 		</styles>
 	</configuration>
