@@ -3,6 +3,7 @@ package demo.stepdefs;
 
 import demo.DriverManager;
 import demo.TestBase;
+import demo.pageObject.ReadTestImageOCR;
 import demo.pageObject.projectAllXpath;
 import demo.pageObject.screenshot_File;
 import demo.pageObject.xls_Reader;
@@ -56,10 +57,11 @@ public class LoginPage extends DriverManager {
             Thread.sleep(3000);
             ITesseract image= new Tesseract();
             image.setDatapath("C:\\Program Files\\Tesseract-OCR\\tessdata");
+            image.setTessVariable("user_defined_dpi", "96");
             String str=image.doOCR(new File(Path));
             System.out.println("Image OCR Done: ");
-            System.out.println(str.replaceAll("\\n"," "));
-
+            ReadTestImageOCR.ImageToText(str);
+            System.out.println(str);
         }catch (Exception e){
             System.out.println("CaptchaTextBox not view: "+e.getMessage());
         }

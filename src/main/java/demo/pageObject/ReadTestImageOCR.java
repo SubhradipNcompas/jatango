@@ -16,7 +16,7 @@ import java.io.File;
 public class ReadTestImageOCR extends DriverManager {
     public static String ImageToText(String path){
         ITesseract image = new Tesseract();
-        image.setDatapath("tessdata-main");
+        image.setDatapath("tessdata");
         image.setLanguage("eng");
         String str1=null;
         try {
