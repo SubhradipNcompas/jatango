@@ -49,9 +49,9 @@ public class LoginPage extends DriverManager {
     @When("Enter Username")
     public void enter_username() throws Exception {
         dashBoardXpath.moveToElementAndCLikOn(Log_In);
-        TestBase.getImplicitewait();
+        TestBase.getImplicitewait(100);
         dashBoardXpath.enterValue(dashBoardXpath.Username, reader.getCellData("Login", "USERNAME", 2));
-        TestBase.getImplicitewait();
+        TestBase.getImplicitewait(100);
         System.out.println("   Enter UserName is:  " + reader.getCellData("Login", "USERNAME", 2));
 
     }
@@ -62,7 +62,6 @@ public class LoginPage extends DriverManager {
             dashBoardXpath.clickOnAfterElementIsVisible(Sing_In);
             Thread.sleep(3000);
             try{
-            if(!CaptchaTextBox.isDisplayed()){
                 WebElement element=driver.findElement(By.xpath("/html/body/div/main/section/div/div/div/div[1]/div/form/div[1]/div/div[2]/div[1]/img"));
                 File src=element.getScreenshotAs(OutputType.FILE);
                 String Path="./Screenshots/capture.png";
@@ -74,40 +73,39 @@ public class LoginPage extends DriverManager {
                 Thread.sleep(3000);
                 dashBoardXpath.enterValue(CaptchaTextBox,str);
                 Thread.sleep(5000);
-            }else{
-                System.out.println("CaptchaTextBox not view");
-            }
+                dashBoardXpath.clickOnAfterElementIsVisible(Sing_In);
+                Thread.sleep(5000);
             }catch (Exception e){
                 System.out.println("CaptchaTextBox not view");
             }
             dashBoardXpath.enterValue(dashBoardXpath.Password, reader.getCellData("Login", "PASSWORD", 2));
-            TestBase.getImplicitewait();
+            TestBase.getImplicitewait(100);
             System.out.println(" Enter The Password is: " + reader.getCellData("Login", "PASSWORD", 2));
         } else {
             dashBoardXpath.enterValue(dashBoardXpath.Password, reader.getCellData("Login", "PASSWORD", 2));
-            TestBase.getImplicitewait();
-            System.out.println(" Enter The Password is: " + reader.getCellData("Login", "PASSWORD", 2));
+            TestBase.getImplicitewait(100);
+            System.out.println(" Enter The Password is captch not showing: " + reader.getCellData("Login", "PASSWORD", 2));
         }
     }
 
     @Then("Click Sing_In")
     public void click_sing_in() throws Exception {
-        TestBase.getImplicitewait();
+        TestBase.getImplicitewait(100);
         WebElement SingIn = Sing_In;
         try {
             if (SingIn.isDisplayed()) {
                 dashBoardXpath.clickOn(SingIn);
                 System.out.println("************Click The Sing_In Button************");
-                TestBase.getExplicitwait();
+                Thread.sleep(5000);
             } else {
                 System.out.println("************Click The Sing_In Button Related Issue************");
-                TestBase.getImplicitewait();
+                TestBase.getImplicitewait(100);
             }
         }catch (Exception e){
             System.out.println("Sign_in button not view");
             screenshot_File.Jatango(driver,"Sign_in button not view");
             Assert.assertTrue(true,"Sign_in button not view");
-            TestBase.getImplicitewait();
+            TestBase.getImplicitewait(100);
         }
 
         Thread.sleep(5000);
@@ -118,7 +116,7 @@ public class LoginPage extends DriverManager {
         String LoginURL=TestBase.URL;
         softAssert.assertEquals(CurrentURL,LoginURL);
         System.out.println("Login Successful");
-        TestBase.getImplicitewait();
+        TestBase.getImplicitewait(100);
         System.out.println("Title Verify: "+driver.getTitle());
 
        dashBoardXpath.moveToElementAndCLikOn(MyShops);
