@@ -4,12 +4,180 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="3rd commend">
+    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="4th commend">
+      <change afterPath="$PROJECT_DIR$/src/main/java/demo/pageObject/ReadTestImageOCR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/afr.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/amh.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ara.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/asm.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/aze.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/aze_cyrl.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/bel.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ben.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/bod.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/bos.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/bre.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/bul.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/cat.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ceb.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ces.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/chi_sim.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/chi_sim_vert.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/chi_tra.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/chi_tra_vert.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/chr.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/configs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/cos.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/cym.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/dan.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/dan_frak.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/deu.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/deu_frak.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/deu_latf.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/div.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/dzo.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ell.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/eng.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/enm.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/epo.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/equ.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/est.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/eus.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/fao.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/fas.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/fil.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/fin.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/fra.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/frm.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/fry.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/gla.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/gle.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/glg.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/grc.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/guj.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/hat.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/heb.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/hin.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/hrv.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/hun.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/hye.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/iku.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ind.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/isl.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ita.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ita_old.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/jav.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/jpn.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/jpn_vert.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/kan.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/kat.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/kat_old.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/kaz.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/khm.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/kir.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/kmr.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/kor.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/kor_vert.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/lao.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/lat.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/lav.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/lit.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ltz.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/mal.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/mar.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/mkd.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/mlt.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/mon.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/mri.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/msa.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/mya.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/nep.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/nld.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/nor.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/oci.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ori.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/osd.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/pan.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/pdf.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/pol.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/por.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/pus.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/que.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ron.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/rus.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/san.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Arabic.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Armenian.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Bengali.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Canadian_Aboriginal.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Cherokee.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Cyrillic.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Devanagari.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Ethiopic.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Fraktur.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Georgian.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Greek.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Gujarati.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Gurmukhi.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/HanS.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/HanS_vert.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/HanT.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/HanT_vert.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Hangul.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Hangul_vert.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Hebrew.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Japanese.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Japanese_vert.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Kannada.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Khmer.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Lao.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Latin.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Malayalam.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Myanmar.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Oriya.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Sinhala.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Syriac.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Tamil.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Telugu.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Thaana.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Thai.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Tibetan.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Vietnamese.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/sin.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/slk.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/slk_frak.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/slv.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/snd.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/spa.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/spa_old.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/sqi.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/srp.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/srp_latn.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/sun.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/swa.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/swe.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/syr.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/tam.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/tat.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/tel.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/tgk.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/tgl.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/tha.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/tir.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ton.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/tur.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/uig.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/ukr.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/urd.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/uzb.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/uzb_cyrl.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/vie.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/yid.traineddata" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tessdata-main/yor.traineddata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/extent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/extent.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,27 +222,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: Product.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: shows.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Successfully create a new product.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Successfully create a new show.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Verify whether User is able to access the application.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Runner (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.Runner.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.login.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.product.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.shows.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/planit-web-test&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: Product.executor": "Run",
+    "Cucumber Java.Feature: shows.executor": "Run",
+    "Cucumber Java.Scenario: Successfully create a new product.executor": "Run",
+    "Cucumber Java.Scenario: Successfully create a new show.executor": "Run",
+    "Cucumber Java.Scenario: Verify whether User is able to access the application.executor": "Run",
+    "JUnit.Runner (1).executor": "Run",
+    "JUnit.Runner.executor": "Run",
+    "JUnit.login.executor": "Run",
+    "JUnit.product.executor": "Run",
+    "JUnit.shows.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/jatango"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jatango" />
       <recent name="D:\jatango\src\test\resources\All_PhotoAnd_Biodate" />
       <recent name="D:\jatango\src\test\resources" />
       <recent name="D:\Automation\Simplify_git\simplify\simplify\src\test\resources" />
@@ -201,7 +370,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726312275400</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="4th commend">
+      <option name="closed" value="true" />
+      <created>1726468569218</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726468569218</updated>
+    </task>
+    <task id="LOCAL-00004" summary="4th commend">
+      <option name="closed" value="true" />
+      <created>1726468588069</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726468588069</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +403,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2nd commend" />
     <MESSAGE value="3rd commend" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd commend" />
+    <MESSAGE value="4th commend" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th commend" />
   </component>
 </project>
