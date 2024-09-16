@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="4th commend">
+    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="5th commend">
       <change afterPath="$PROJECT_DIR$/src/main/java/demo/pageObject/ReadTestImageOCR.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tessdata-main/.gitmodules" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tessdata-main/LICENSE" afterDir="false" />
@@ -109,7 +109,6 @@
       <change afterPath="$PROJECT_DIR$/tessdata-main/ron.traineddata" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tessdata-main/rus.traineddata" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tessdata-main/san.traineddata" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tessdata-main/script/Arabic.traineddata" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tessdata-main/script/Armenian.traineddata" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tessdata-main/script/Bengali.traineddata" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tessdata-main/script/Canadian_Aboriginal.traineddata" afterDir="false" />
@@ -178,6 +177,9 @@
       <change afterPath="$PROJECT_DIR$/tessdata-main/yid.traineddata" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tessdata-main/yor.traineddata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/test-recordings/URL Start-2024-09-14 16.33.05.avi" beforeDir="false" afterPath="$PROJECT_DIR$/tessdata-main/script/Arabic.traineddata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/test-recordings/URL Start-2024-09-14 16.38.40.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Data.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -386,7 +388,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726468588069</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="5th commend">
+      <option name="closed" value="true" />
+      <created>1726471787771</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726471787771</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,6 +414,7 @@
     <MESSAGE value="2nd commend" />
     <MESSAGE value="3rd commend" />
     <MESSAGE value="4th commend" />
-    <option name="LAST_COMMIT_MESSAGE" value="4th commend" />
+    <MESSAGE value="5th commend" />
+    <option name="LAST_COMMIT_MESSAGE" value="5th commend" />
   </component>
 </project>
