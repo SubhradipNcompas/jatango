@@ -1,4 +1,4 @@
-# simplify
+# jatango
 
 <plugin>
 	<groupId>tech.grasshopper</groupId>
