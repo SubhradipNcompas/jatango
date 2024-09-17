@@ -10,6 +10,7 @@ import demo.pageObject.xls_Reader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import lombok.val;
 import net.sourceforge.tess4j.ITesseract;
 import net.sourceforge.tess4j.Tesseract;
 import org.openqa.selenium.By;
@@ -22,6 +23,7 @@ import org.testng.asserts.SoftAssert;
 import java.io.File;
 
 import static demo.pageObject.projectAllXpath.*;
+import static org.sikuli.script.Sikulix.print;
 
 
 public class LoginPage extends DriverManager {
@@ -50,14 +52,12 @@ public class LoginPage extends DriverManager {
         Thread.sleep(5000);
         System.out.println("   Enter UserName is:  " + reader.getCellData("Login", "USERNAME", 2));
         try{
-            WebElement imageelement=driver.findElement(By.xpath("/html/body/div/main/section/div/div/div/div[1]/div/form/div[1]/div/div[2]/div[1]/img"));
+            WebElement imageelement=driver.findElement(By.xpath("//*[@alt='captcha']"));
             File src=imageelement.getScreenshotAs(OutputType.FILE);
             String Path="./Screenshots/capture.png";
             FileHandler.copy(src,new File(Path));
             Thread.sleep(3000);
             ITesseract image= new Tesseract();
-            image.setDatapath("C:\\Program Files\\Tesseract-OCR\\tessdata");
-            image.setTessVariable("user_defined_dpi", "96");
             String str=image.doOCR(new File(Path));
             System.out.println("Image OCR Done: ");
             ReadTestImageOCR.ImageToText(str);
