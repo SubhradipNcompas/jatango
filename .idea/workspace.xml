@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="8th commit">
+    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="9th commit">
       <change afterPath="$PROJECT_DIR$/tessdata/tessdata-main/.gitmodules" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tessdata/tessdata-main/LICENSE" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tessdata/tessdata-main/README.md" afterDir="false" />
@@ -450,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726523256743</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="9th commit">
+      <option name="closed" value="true" />
+      <created>1726554824992</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1726554824992</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -472,6 +480,7 @@
     <MESSAGE value="6th commend" />
     <MESSAGE value="7th commend" />
     <MESSAGE value="8th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="8th commit" />
+    <MESSAGE value="9th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="9th commit" />
   </component>
 </project>
