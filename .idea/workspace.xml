@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="9th commit">
+    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="10th commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pageObject/ReadTestImageOCR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pageObject/ReadTestImageOCR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Data.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,26 +55,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Testing.executor": "Run",
-    "Cucumber Java.Feature: Product.executor": "Run",
-    "Cucumber Java.Feature: shows.executor": "Run",
-    "Cucumber Java.Scenario: Successfully create a new product.executor": "Run",
-    "Cucumber Java.Scenario: Successfully create a new show.executor": "Run",
-    "Cucumber Java.Scenario: Verify whether User is able to access the application.executor": "Run",
-    "JUnit.Runner (1).executor": "Run",
-    "JUnit.Runner.executor": "Run",
-    "JUnit.login.executor": "Run",
-    "JUnit.product.executor": "Run",
-    "JUnit.shows.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/jatango"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Testing.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: Product.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: shows.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Successfully create a new product.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Successfully create a new show.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Verify whether User is able to access the application.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Runner (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.Runner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.login.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.product.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.shows.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/jatango&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\jatango" />
@@ -295,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726555398125</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="10th commit">
+      <option name="closed" value="true" />
+      <created>1726595269390</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1726595269390</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -318,6 +326,7 @@
     <MESSAGE value="7th commend" />
     <MESSAGE value="8th commit" />
     <MESSAGE value="9th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="9th commit" />
+    <MESSAGE value="10th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="10th commit" />
   </component>
 </project>

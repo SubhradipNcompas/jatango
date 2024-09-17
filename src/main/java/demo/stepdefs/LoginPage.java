@@ -30,6 +30,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import javax.imageio.ImageIO;
+import javax.swing.*;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
@@ -92,6 +94,10 @@ public class LoginPage extends DriverManager {
             String finalText=imageText.replaceAll("[^a-zA-z0-9]","");
             System.out.println("finalText: "+finalText);
             Thread.sleep(5000);
+
+            String abc= JOptionPane.showInputDialog("Enter The capture");
+            System.out.println("Test Image: "+abc);
+            reader.setCellData("Login","Captcha",2,abc);
 
         } catch (Exception e) {
             System.out.println("CaptchaTextBox not view: " + e.getMessage());
