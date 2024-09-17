@@ -98,14 +98,13 @@ public class LoginPage extends DriverManager {
             String abc= JOptionPane.showInputDialog("Enter The capture");
             System.out.println("Test Image: "+abc);
             reader.setCellData("Login","Captcha",2,abc);
-            Thread.sleep(3000);
+            Thread.sleep(2000);
             String xyz=reader.getCellData("Login","Captcha",2);
             dashBoardXpath.enterValue(CaptchaTextBox,xyz);
             System.out.println("Captch value is: "+xyz);
-            Thread.sleep(5000);
-
-
-
+            Thread.sleep(2000);
+            dashBoardXpath.clickOn(Continue);
+            Thread.sleep(8000);
         } catch (Exception e) {
             System.out.println("CaptchaTextBox not view: " + e.getMessage());
         }

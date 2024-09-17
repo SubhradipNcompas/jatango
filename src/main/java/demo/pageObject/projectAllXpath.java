@@ -42,7 +42,8 @@ public class projectAllXpath extends userHomePage {
     public static WebElement Log_In;
     @FindBy(how = How.XPATH, using = "//*[@id='captcha'][@type='text']")
     public static WebElement CaptchaTextBox;
-
+    @FindBy(how = How.XPATH, using = " //*[@class='ca0df71c7']/button[@type='submit']")
+    public static WebElement Continue;
 
     //***********************Create Product Page****************************************************************************
     @FindBy(how = How.XPATH, using = "//body/div[@id='__next']/div[1]/main[1]/div[2]/div[1]/div[1]/div/p[1]")
