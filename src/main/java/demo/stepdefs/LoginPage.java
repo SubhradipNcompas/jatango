@@ -4,10 +4,7 @@ package demo.stepdefs;
 import com.asprise.ocr.Ocr;
 import demo.DriverManager;
 import demo.TestBase;
-import demo.pageObject.ReadTestImageOCR;
-import demo.pageObject.projectAllXpath;
-import demo.pageObject.screenshot_File;
-import demo.pageObject.xls_Reader;
+import demo.pageObject.*;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -56,6 +53,7 @@ public class LoginPage extends DriverManager {
     // TestCase:-1
     @Given("Enter application URL in address bar")
     public void enter_application_url_in_address_bar() throws Exception {
+        ScreenRecorderUtil.startRecord("URL open");
         try {
             driver.get(prop.getPropValues(TestBase.URL));
             Thread.sleep(8000);

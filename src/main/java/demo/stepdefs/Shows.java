@@ -129,6 +129,7 @@ public class Shows extends DriverManager {
             screenshot_File.Jatango(driver,"CurrentTitle");
             System.out.println("the user should not see the newly created show page");
         }
+        ScreenRecorderUtil.stopRecord();
     }
 
 }
