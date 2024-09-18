@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="17th commit">
+    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="18th commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/Shows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/Shows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Product.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Product.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/shows.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/shows.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Data.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -361,7 +362,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726643017065</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="18th commit">
+      <option name="closed" value="true" />
+      <created>1726654791324</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1726654791324</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -392,6 +401,7 @@
     <MESSAGE value="15th commit" />
     <MESSAGE value="16th commit" />
     <MESSAGE value="17th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="17th commit" />
+    <MESSAGE value="18th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="18th commit" />
   </component>
 </project>

@@ -149,9 +149,20 @@ public class LoginPage extends DriverManager {
         System.out.println("Login Successful");
         Thread.sleep(3000);
         System.out.println("Title Verify: " + driver.getTitle());
-
-        dashBoardXpath.moveToElementAndCLikOn(MyShops);
-
+        try {
+            for (int i = 0; i < MyShopsList.size(); i++) {
+                Thread.sleep(2000);
+                dashBoardXpath.getDropDownValue(MyShopsList);
+                Thread.sleep(2000);
+                if (dashBoardXpath.getDropDownValue(MyShopsList).equals(MyShopsValue)) ;
+                Thread.sleep(2000);
+                dashBoardXpath.iterateWebElementListAndSelectValue(MyShopsList, MyShopsValue);
+                Thread.sleep(2000);
+            }
+        }catch (Exception e){
+            screenshot_File.Jatango(driver,"redirected");
+            System.out.println("User should not be redirected: "+e.getMessage());
+        }
     }
 
     private static BufferedImage cropImage(File filePath, int x, int y, int w,
