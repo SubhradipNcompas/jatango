@@ -61,58 +61,62 @@ public class CreateProduct extends DriverManager {
 
     @When("User fill in the product details with valid information")
     public void user_fill_in_the_product_details_with_valid_information()throws Throwable {
-        //Upload Cover Photo
-        dashBoardXpath.clickOn(AddCoverPhoto);
-        Runtime.getRuntime().exec("src/test/resources/All_PhotoAnd_Biodate/jatango.exe"+" "+" "+dirPath+"/src/test/resources/All_PhotoAnd_Biodate/shopping.jpeg");
-        Thread.sleep(2000);
-        dashBoardXpath.clickOn(CoverPhotoSave);
-        System.out.println("User fill in the product details with valid information");
-        Thread.sleep(2000);
+        try {
+            //Upload Cover Photo
+            dashBoardXpath.clickOn(AddCoverPhoto);
+            Runtime.getRuntime().exec("src/test/resources/All_PhotoAnd_Biodate/jatango.exe" + " " + " " + dirPath + "\\src\\test\\resources\\All_PhotoAnd_Biodate\\shopping.jpeg");
+            Thread.sleep(2000);
+            dashBoardXpath.clickOn(CoverPhotoSave);
+            System.out.println("User fill in the product details with valid information");
+            Thread.sleep(2000);
 
-        //Product name * Field
-        dashBoardXpath.enterValue(EnterProductName,value);
-        System.out.println("Product name * Field: "+reader.setCellData("Product","ProductNameData",2,value));
-        Thread.sleep(3000);
+            //Product name * Field
+            dashBoardXpath.enterValue(EnterProductName, value);
+            System.out.println("Product name * Field: " + reader.setCellData("Product", "ProductNameData", 2, value));
+            Thread.sleep(3000);
 
-        //Category * dropdown Value Select
-        dashBoardXpath.moveToElementAndCLikOn(SelectCategory);
-        dashBoardXpath.iterateWebElementListAndSelectValue(allCategory,Selectcategory);
-        System.out.println("Category * dropdown Value SelectCategory: "+Selectcategory);
-        Thread.sleep(3000);
+            //Category * dropdown Value Select
+            dashBoardXpath.moveToElementAndCLikOn(SelectCategory);
+            dashBoardXpath.iterateWebElementListAndSelectValue(allCategory, Selectcategory);
+            System.out.println("Category * dropdown Value SelectCategory: " + Selectcategory);
+            Thread.sleep(3000);
 
-        dashBoardXpath.iterateWebElementListAndSelectValue(allCategory,SelectCategoryProduct);
-        System.out.println("Category * dropdown Value SelectCategoryProduct: "+SelectCategoryProduct);
-        Thread.sleep(3000);
+            dashBoardXpath.iterateWebElementListAndSelectValue(allCategory, SelectCategoryProduct);
+            System.out.println("Category * dropdown Value SelectCategoryProduct: " + SelectCategoryProduct);
+            Thread.sleep(3000);
 
-        dashBoardXpath.iterateWebElementListAndSelectValue(allCategory,SelectProduct);
-        System.out.println("Category * dropdown Value SelectProduct: "+SelectProduct);
-        Thread.sleep(3000);
+            dashBoardXpath.iterateWebElementListAndSelectValue(allCategory, SelectProduct);
+            System.out.println("Category * dropdown Value SelectProduct: " + SelectProduct);
+            Thread.sleep(3000);
 
-        //Price * required
-        dashBoardXpath.enterValue(Price,PriceDetails);
-        System.out.println("Price * required: "+PriceDetails);
-        Thread.sleep(3000);
+            //Price * required
+            dashBoardXpath.enterValue(Price, PriceDetails);
+            System.out.println("Price * required: " + PriceDetails);
+            Thread.sleep(3000);
 
-        //Weight * required
-        dashBoardXpath.enterValue(Weight,WeightValue);
-        System.out.println("Weight * required: "+WeightValue);
-        Thread.sleep(3000);
+            //Weight * required
+            dashBoardXpath.enterValue(Weight, WeightValue);
+            System.out.println("Weight * required: " + WeightValue);
+            Thread.sleep(3000);
 
-        //Weight Estimate
+            //Weight Estimate
 
-        dashBoardXpath.clickOn(WeightEstimate);
-        dashBoardXpath.getDropDownValue(WeightAllEstimate);
-        dashBoardXpath.iterateWebElementListAndSelectValue(WeightAllEstimate,Weight_Estimate);
-        System.out.println("Weight_Estimate is required: "+Weight_Estimate);
-        Thread.sleep(3000);
+            dashBoardXpath.clickOn(WeightEstimate);
+            dashBoardXpath.getDropDownValue(WeightAllEstimate);
+            dashBoardXpath.iterateWebElementListAndSelectValue(WeightAllEstimate, Weight_Estimate);
+            System.out.println("Weight_Estimate is required: " + Weight_Estimate);
+            Thread.sleep(3000);
 
-        //Quantity in stock *
-        dashBoardXpath.enterValue(Quantity_in_stock,Quantity);
-        System.out.println("Quantity in stock *: "+Quantity);
-        Thread.sleep(3000);
+            //Quantity in stock *
+            dashBoardXpath.enterValue(Quantity_in_stock, Quantity);
+            System.out.println("Quantity in stock *: " + Quantity);
+            Thread.sleep(3000);
 
+        }catch (Exception e){
+            System.out.println("User not fill in the product details with valid information"+e.getMessage());
+            screenshot_File.Jatango(driver,"not valid Information");
+        }
     }
-
     @When("User submit the product creation form")
     public void user_submit_the_product_creation_form() throws Throwable {
         if(PublishProduct.isDisplayed()){

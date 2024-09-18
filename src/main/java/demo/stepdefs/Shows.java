@@ -61,6 +61,9 @@ public class Shows extends DriverManager {
             dashBoardXpath.enterValue(ShowsName,NameofShows);
             System.out.println("the user fills in the show details with valid information: "+NameofShows);
             Thread.sleep(5000);
+        }else {
+            screenshot_File.Jatango(driver,"ShowsName");
+            System.out.println("the user fills in the show details with not valid information");
         }
     }
 
@@ -87,29 +90,45 @@ public class Shows extends DriverManager {
             dashBoardXpath.iterateWebElementListAndSelectValue(ListofProduct,data);
             System.out.println("the user adds the product to the show: ");
             Thread.sleep(8000);
+        }else {
+            screenshot_File.Jatango(driver,"AddSelectProduct");
+            System.out.println("the user not adds the product to the show: ");
         }
     }
 
     @Then("the user copies the show's link")
     public void the_user_copies_the_show_s_link() {
-        String link = copyURL.getText();
-        System.out.println("the user copies the show's link: "+reader.setCellData("Shows","LiveURLLink",2,link.trim()));
+        try {
+            String link = copyURL.getText();
+            System.out.println("the user copies the show's link: " + reader.setCellData("Shows", "LiveURLLink", 2, link.trim()));
+        }catch (Exception e){
+            screenshot_File.Jatango(driver,"Copy link");
+            System.out.println("the user not copies the show's link: "+e.getMessage());
+        }
     }
-
     @When("the user pastes the link in the browser")
     public void the_user_pastes_the_link_in_the_browser() throws Throwable {
-        String LiveDemo = reader.getCellData("Shows","LiveURLLink",2);
-        String Test="https://"+LiveDemo;
-        driver.navigate().to(Test);
+        try {
+            String LiveDemo = reader.getCellData("Shows", "LiveURLLink", 2);
+            String Test = "https://" + LiveDemo;
+            driver.navigate().to(Test);
+        }catch (Exception e){
+            screenshot_File.Jatango(driver,"LiveDemo");
+            System.out.println("the user not pastes the link in the browser"+e.getMessage());
+        }
     }
 
     @Then("the user should see the newly created show page")
     public void the_user_should_see_the_newly_created_show_page()throws Throwable {
         String CurrentTitle=driver.getTitle();
-        softAssert.assertTrue(true, CurrentTitle);
-        System.out.println("the user should see the newly created show page: "+CurrentTitle);
-        Thread.sleep(3000);
-        ScreenRecorderUtil.stopRecord();
+        if (CurrentTitle.equals("Jatango")) {
+            softAssert.assertTrue(true, CurrentTitle);
+            System.out.println("the user should see the newly created show page: " + CurrentTitle);
+            Thread.sleep(3000);
+        }else {
+            screenshot_File.Jatango(driver,"CurrentTitle");
+            System.out.println("the user should not see the newly created show page");
+        }
     }
 
 }

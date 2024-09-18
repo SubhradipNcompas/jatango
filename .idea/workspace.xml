@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="15th commit">
+    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="16th commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/CreateProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/CreateProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/Shows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/Shows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Jatango.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Jatango.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,7 +347,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726641177710</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="16th commit">
+      <option name="closed" value="true" />
+      <created>1726641665652</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1726641665652</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -370,6 +384,7 @@
     <MESSAGE value="13th commit" />
     <MESSAGE value="14th commit" />
     <MESSAGE value="15th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="15th commit" />
+    <MESSAGE value="16th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="16th commit" />
   </component>
 </project>

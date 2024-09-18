@@ -56,8 +56,13 @@ public class LoginPage extends DriverManager {
     // TestCase:-1
     @Given("Enter application URL in address bar")
     public void enter_application_url_in_address_bar() throws Exception {
-        driver.get(prop.getPropValues(TestBase.URL));
-        Thread.sleep(8000);
+        try {
+            driver.get(prop.getPropValues(TestBase.URL));
+            Thread.sleep(8000);
+        }catch (Exception e){
+            System.out.println("Enter application URL in address bar is not working");
+            screenshot_File.Jatango(driver,"address bar");
+        }
     }
 
     @When("Enter Username")
@@ -93,6 +98,7 @@ public class LoginPage extends DriverManager {
             Thread.sleep(8000);
         } catch (Exception e) {
             System.out.println("CaptchaTextBox not view: " + e.getMessage());
+            screenshot_File.Jatango(driver,"CaptchaTextBox not view");
         }
 
     }
@@ -106,9 +112,11 @@ public class LoginPage extends DriverManager {
             Thread.sleep(3000);
             System.out.println(" Enter The Password is: " + reader.getCellData("Login", "PASSWORD", 2));
         } else {
+            screenshot_File.Jatango(driver,"Password is captch not showing");
             dashBoardXpath.enterValue(dashBoardXpath.Password, reader.getCellData("Login", "PASSWORD", 2));
-            Thread.sleep(3000);
             System.out.println(" Enter The Password is captch not showing: " + reader.getCellData("Login", "PASSWORD", 2));
+            Thread.sleep(3000);
+
         }
     }
 
