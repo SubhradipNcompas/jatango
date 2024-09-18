@@ -47,10 +47,10 @@ public class CreateProduct extends DriverManager {
             if(CreateNewProduct.isDisplayed()){
                 dashBoardXpath.clickOn(CreateNewProduct);
                 System.out.println(" User on the product creation page: "+CreateNewProduct.isDisplayed());
-                Thread.sleep(3000);
+                Thread.sleep(1000);
                 System.out.println(" User on the product creation page: "+CreateProductNew.isDisplayed());
                 dashBoardXpath.clickOn(CreateProductNew);
-                Thread.sleep(3000);
+                Thread.sleep(1000);
             }else {
                 System.out.println("User Not the view product creation page");
                 screenshot_File.Jatango(driver,"CreatePage Not View");
@@ -63,11 +63,11 @@ public class CreateProduct extends DriverManager {
     public void user_fill_in_the_product_details_with_valid_information()throws Throwable {
         //Upload Cover Photo
         dashBoardXpath.clickOn(AddCoverPhoto);
-        Runtime.getRuntime().exec("src/test/resources/All_PhotoAnd_Biodate/jatango.exe"+" "+"D:\\jatango\\src\\test\\resources\\All_PhotoAnd_Biodate\\shopping.jpeg");
-        TestBase.getExplicitwait();
+        Runtime.getRuntime().exec("src/test/resources/All_PhotoAnd_Biodate/jatango.exe"+" "+" "+"D:\\jatango\\src\\test\\resources\\All_PhotoAnd_Biodate\\shopping.jpeg");
+        Thread.sleep(2000);
         dashBoardXpath.clickOn(CoverPhotoSave);
         System.out.println("User fill in the product details with valid information");
-        TestBase.getExplicitwait();
+        Thread.sleep(2000);
 
         //Product name * Field
         dashBoardXpath.enterValue(EnterProductName,value);

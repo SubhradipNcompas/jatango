@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="13th commit">
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pageObject/projectAllXpath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pageObject/projectAllXpath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" afterDir="false" />
-    </list>
+    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="14th commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -326,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726605874040</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="14th commit">
+      <option name="closed" value="true" />
+      <created>1726606832584</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1726606832584</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,6 +358,7 @@
     <MESSAGE value="11th commit" />
     <MESSAGE value="12th commit" />
     <MESSAGE value="13th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="13th commit" />
+    <MESSAGE value="14th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="14th commit" />
   </component>
 </project>
