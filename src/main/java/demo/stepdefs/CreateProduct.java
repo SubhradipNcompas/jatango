@@ -63,7 +63,7 @@ public class CreateProduct extends DriverManager {
     public void user_fill_in_the_product_details_with_valid_information()throws Throwable {
         //Upload Cover Photo
         dashBoardXpath.clickOn(AddCoverPhoto);
-        Runtime.getRuntime().exec("src/test/resources/All_PhotoAnd_Biodate/jatango.exe"+" "+" "+"D:\\jatango\\src\\test\\resources\\All_PhotoAnd_Biodate\\shopping.jpeg");
+        Runtime.getRuntime().exec("src/test/resources/All_PhotoAnd_Biodate/jatango.exe"+" "+" "+dirPath+"/src/test/resources/All_PhotoAnd_Biodate/shopping.jpeg");
         Thread.sleep(2000);
         dashBoardXpath.clickOn(CoverPhotoSave);
         System.out.println("User fill in the product details with valid information");

@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="14th commit" />
+    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="15th commit">
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/CreateProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/CreateProduct.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,14 +75,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\jatango" />
-      <recent name="D:\jatango\tessdata" />
-      <recent name="D:\jatango\src\test\resources\All_PhotoAnd_Biodate" />
-      <recent name="D:\jatango\src\test\resources" />
-      <recent name="D:\Automation\Simplify_git\simplify\simplify\src\test\resources" />
+      <recent name="C:\jatango" />
+      <recent name="C:\jatango\tessdata" />
+      <recent name="C:\Users\testuser\IdeaProjects\jatango\src\test\resources\All_PhotoAnd_Biodate" />
+      <recent name="C:\Users\testuser\IdeaProjects\jatango\src\test\resources" />
+      <recent name="C:\Users\testuser\IdeaProjects\jatango\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Automation\Simplify_git\simplify\simplify\src\test\resources\All_PhotoAnd_Biodate" />
+      <recent name="C:\Users\testuser\IdeaProjects\jatango\src\test\resources\All_PhotoAnd_Biodate" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="demo.pageObject" />
@@ -331,7 +333,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726606832584</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="15th commit">
+      <option name="closed" value="true" />
+      <created>1726641177710</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1726641177710</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -359,6 +369,7 @@
     <MESSAGE value="12th commit" />
     <MESSAGE value="13th commit" />
     <MESSAGE value="14th commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="14th commit" />
+    <MESSAGE value="15th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="15th commit" />
   </component>
 </project>
