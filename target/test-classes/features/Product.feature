@@ -12,4 +12,3 @@ Feature: Spring 2 Jatango project scenario-2
     When User fill in the product details with valid information
     And User submit the product creation form
     And the new product should be listed in the product inventory
-
