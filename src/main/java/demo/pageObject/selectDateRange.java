@@ -13,9 +13,9 @@ public class selectDateRange {
     }
 
     private static void selectDtInRange(String dt, String container) throws InterruptedException {
-        String year = dt.split("/")[2].toString();
+        String year = dt.split("/")[2];
         int month = Integer.parseInt(dt.split("/")[1]);
-        String day = dt.split("/")[0].toString();
+        String day = dt.split("/")[0];
         System.out.println("String date is "+dt+" year"+ " "+year + " "+" month" + " "+ month + " "+ " day"+ " "+ day);
         driver.findElement(By.xpath(container+"//nav/div[2]/i")).click();
         Thread.sleep(1000);
@@ -32,9 +32,9 @@ public class selectDateRange {
     }
 
     private static void selectEndDate(String dt, String container) throws InterruptedException {
-        String year = dt.split("/")[2].toString();
+        String year = dt.split("/")[2];
         int month = Integer.parseInt(dt.split("/")[1]);
-        String day = dt.split("/")[0].toString();
+        String day = dt.split("/")[0];
         System.out.println("String date is "+dt+" year"+ " "+year + " "+" month" + " "+ month + " "+ " day"+ " "+ day);
         driver.findElement(By.xpath(container+"//nav/div[2]/i")).click();
         Thread.sleep(1000);

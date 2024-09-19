@@ -7,7 +7,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class driverStorage {
-    private WebDriver driver;
+    private final WebDriver driver;
 
 
     public driverStorage(WebDriver driver) {

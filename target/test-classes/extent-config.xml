@@ -1,44 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extentreports>
 	<configuration>
+
 		<!-- report theme -->
+		<!-- STANDARD, DARK -->
+		<theme>DARK</theme>
 
-		<!-- standard, dark -->
-
-		<theme>dark</theme>
 		<!-- document encoding -->
-
 		<!-- defaults to UTF-8 -->
-
 		<encoding>UTF-8</encoding>
+
 		<!-- protocol for script and stylesheets -->
-
 		<!-- defaults to https -->
+		<!-- HTTP, HTTPS -->
+		<protocol>HTTPS</protocol>
 
-		<protocol>http</protocol>
+		<!-- offline report -->
+		<timelineEnabled>true</timelineEnabled>
+
+		<!-- offline report -->
+		<enableOfflineMode>false</enableOfflineMode>
+
+		<!-- use thumbnails for base64 images -->
+		<!-- this may slowdown viewing tests -->`enter code here`
+		<thumbnailForBase64>false</thumbnailForBase64>
+
 		<!-- title of the document -->
-		<documentTitle>Extent</documentTitle>
+		<documentTitle>FCPQ-DG Test Automation Extent Report</documentTitle>
+
 		<!-- report name - displayed at top-nav -->
+		<reportName>
+			Test Automation Report
+		</reportName>
 
-		<reportName>Grasshopper Report</reportName>
-		<!-- location of charts in the test view -->
+		<!-- timestamp format -->
+		<timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>
 
-		<!-- top, bottom -->
-
-		<testViewChartLocation>bottom</testViewChartLocation>
 		<!-- custom javascript -->
-
 		<scripts>
-
 			<![CDATA[
-$(document).ready(function() {
-});
-]]>
+        $(document).ready(function() {
+
+        });
+      ]]>
 		</scripts>
+
 		<!-- custom styles -->
 		<styles>
 			<![CDATA[
-]]>
+
+      ]]>
 		</styles>
 	</configuration>
 </extentreports>

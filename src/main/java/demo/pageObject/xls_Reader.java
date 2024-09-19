@@ -1,6 +1,7 @@
 package demo.pageObject;
 
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.*;
 
 import java.io.FileInputStream;
@@ -94,10 +95,13 @@ public class xls_Reader {
                 }
 
                 return cellText;
-            } else if (cell.getCellTypeEnum().BLANK != null)
-                return "";
-            else
-                return String.valueOf(cell.getBooleanCellValue());
+            } else {
+                cell.getCellTypeEnum();
+                if (CellType.BLANK != null)
+                    return "";
+                else
+                    return String.valueOf(cell.getBooleanCellValue());
+            }
 
         } catch (Exception e) {
 
@@ -143,10 +147,13 @@ public class xls_Reader {
                 }
 
                 return cellText;
-            } else if (cell.getCellTypeEnum().BLANK != null)
-                return "";
-            else
-                return String.valueOf(cell.getBooleanCellValue());
+            } else {
+                cell.getCellTypeEnum();
+                if (CellType.BLANK != null)
+                    return "";
+                else
+                    return String.valueOf(cell.getBooleanCellValue());
+            }
         } catch (Exception e) {
 
             e.printStackTrace();
@@ -316,10 +323,7 @@ public class xls_Reader {
         int index = workbook.getSheetIndex(sheetName);
         if (index == -1) {
             index = workbook.getSheetIndex(sheetName.toUpperCase());
-            if (index == -1)
-                return false;
-            else
-                return true;
+            return index != -1;
         } else
             return true;
     }

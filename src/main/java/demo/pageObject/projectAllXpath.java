@@ -2,12 +2,14 @@ package demo.pageObject;
 
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.sikuli.guide.ClickableWindow;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -22,7 +24,7 @@ import java.util.regex.Pattern;
 
 public class projectAllXpath extends userHomePage {
     public projectAllXpath(WebDriver driver) {
-        this.driver = driver;
+        projectAllXpath.driver = driver;
         this.actions = new Actions(driver);
         PageFactory.initElements(driver, this);
     }
@@ -58,7 +60,7 @@ public class projectAllXpath extends userHomePage {
     public static WebElement CreateShow;
     @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/form[1]/div[1]/div[1]/button[1]/span[1]")
     public static WebElement AddCoverPhoto;
-    @FindBy(how = How.XPATH, using = "/html/body/div[9]/div[4]/div/div/div[1]/button[2]")
+    @FindBy(how = How.XPATH, using = "/html/body/div[9]/div[4]/div/div/div[1]/button[2]/span/*[1]")
     public static WebElement CoverPhotoSave;
     @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/form[1]/div[2]/div[1]/input[1]")
     public static WebElement EnterProductName;
@@ -96,6 +98,9 @@ public class projectAllXpath extends userHomePage {
     public static List<WebElement> ListofProduct;
     @FindBy(how = How.XPATH, using = "//body/div[@id='__next']/div[1]/div[1]/main[1]/div[2]/div[1]/div[2]/*[1]")
     public static WebElement copyURL;
+
+    @FindBy(how = How.XPATH, using = "//*[contains(text(),'Sign in to add to cart')]")
+    public static WebElement Signintoaddtocart;
     //***********************************************************************************************************************************
     public static void enterValue(WebElement element, String value) {
         element.sendKeys(value);
@@ -137,7 +142,7 @@ public class projectAllXpath extends userHomePage {
     public static String findStringUsingRegex(String input, String regex) {
         final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
         final Matcher matcher = pattern.matcher(input);
-        String output = new String();
+        String output = "";
         while (matcher.find()) {
             output = output.concat(matcher.group(0));
         }
@@ -265,17 +270,7 @@ public class projectAllXpath extends userHomePage {
         return (int) (Math.random() * max);
     }
 
-    public static void gotoTab(WebDriver driver, int tabIndex) throws InterruptedException {
-        List<String> winHandles = new ArrayList<>(driver.getWindowHandles());
-        Thread.sleep(500);
-        driver.switchTo().window(winHandles.get(tabIndex));
-    }
 
-    public void openNewTab(WebDriver driver) throws InterruptedException {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.open('');");
-        Thread.sleep(100);
-    }
 
     private static BufferedImage cropImage(File filePath, int x, int y, int w,
                                            int h) {
@@ -290,6 +285,13 @@ public class projectAllXpath extends userHomePage {
             return null;
         }
     }
+
+    public void gotoTab(WebDriver driver, int tabIndex) throws InterruptedException {
+        List<String> winHandles = new ArrayList<>(driver.getWindowHandles());
+        Thread.sleep(500);
+        driver.switchTo().window(winHandles.get(tabIndex));
+    }
+
 }
 
 

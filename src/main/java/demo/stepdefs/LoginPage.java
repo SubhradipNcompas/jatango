@@ -47,57 +47,54 @@ public class LoginPage extends DriverManager {
     String docpath = dirPath + "/autoIt/resume.doc";
     SoftAssert softAssert = new SoftAssert();
     static String MyShopsValue = reader.getCellData("Login", "MyShopsDashBoard", 2);
-    static String UserNameValue=reader.getCellData("Login", "USERNAME", 2);
-    static String PasswordValue=reader.getCellData("Login", "PASSWORD", 2);
-    static String CaptchaValue=reader.getCellData("Login","Captcha",2);
+    static String UserNameValue = reader.getCellData("Login", "USERNAME", 2);
+    static String PasswordValue = reader.getCellData("Login", "PASSWORD", 2);
+    static String CaptchaValue = reader.getCellData("Login", "Captcha", 2);
+
     // TestCase:-1
     @Given("Enter application URL in address bar")
     public void enter_application_url_in_address_bar() throws Exception {
         ScreenRecorderUtil.startRecord("URL open");
-        try {
-            driver.get(prop.getPropValues(TestBase.URL));
-            System.out.println("Open URL is : "+TestBase.URL);
-            Thread.sleep(8000);
-        }catch (Exception e){
-            System.out.println("Enter application URL in address bar is not working");
-            screenshot_File.Jatango(driver,"address bar");
-        }
+        driver.get(prop.getPropValues(TestBase.URL));
+        System.out.println("Open URL is : " + TestBase.URL);
+        Thread.sleep(8000);
+        screenshot_File.Jatango(driver, "Open URL");
+
     }
 
     @When("Enter Username")
     public void enter_username() throws Exception {
         dashBoardXpath.moveToElementAndCLikOn(Log_In);
-        Thread.sleep(500);
-        dashBoardXpath.enterValue(dashBoardXpath.Username, UserNameValue);
+        enterValue(Username, UserNameValue);
         Thread.sleep(500);
         System.out.println("   Enter UserName is:  " + UserNameValue);
         try {
-            File src1=driver.findElement(By.xpath("//*[@alt='captcha']")).getScreenshotAs(OutputType.FILE);
-            String path="./Screenshots/capture.png";
-            FileHandler.copy(src1,new File(path));
-            ITesseract image1=new Tesseract();
+            File src1 = driver.findElement(By.xpath("//*[@alt='captcha']")).getScreenshotAs(OutputType.FILE);
+            String path = "./Screenshots/capture.png";
+            FileHandler.copy(src1, new File(path));
+            ITesseract image1 = new Tesseract();
             image1.setTessVariable("user_defined_dpi", "71");
             Thread.sleep(500);
-            String imageText=image1.doOCR(new File(path));
-            System.out.println("imageText: "+imageText);
+            String imageText = image1.doOCR(new File(path));
+            System.out.println("imageText: " + imageText);
             Thread.sleep(500);
-            String finalText=imageText.replaceAll("[^a-zA-z0-9]","");
-            System.out.println("finalText: "+finalText);
+            String finalText = imageText.replaceAll("[^a-zA-z0-9]", "");
+            System.out.println("finalText: " + finalText);
             Thread.sleep(500);
 
-            String abc= JOptionPane.showInputDialog("Enter The capture");
-            System.out.println("Test Image: "+abc);
-            reader.setCellData("Login","Captcha",2,abc);
+            String abc = JOptionPane.showInputDialog("Enter The capture");
+            System.out.println("Test Image: " + abc);
+            reader.setCellData("Login", "Captcha", 2, abc);
             Thread.sleep(500);
-            String xyz=reader.getCellData("Login","Captcha",2);
-            dashBoardXpath.enterValue(CaptchaTextBox,xyz);
-            System.out.println("Captch value is: "+xyz);
+            String xyz = reader.getCellData("Login", "Captcha", 2);
+            enterValue(CaptchaTextBox, xyz);
+            System.out.println("Captch value is: " + xyz);
             Thread.sleep(500);
-            dashBoardXpath.clickOn(Continue);
+            clickOn(Continue);
             Thread.sleep(500);
         } catch (Exception e) {
             System.out.println("CaptchaTextBox not view: " + e.getMessage());
-            screenshot_File.Jatango(driver,"CaptchaTextBox not view");
+            screenshot_File.Jatango(driver, "CaptchaTextBox not view");
         }
 
     }
@@ -105,47 +102,47 @@ public class LoginPage extends DriverManager {
     @Then("Enter Password")
     public void enter_password() throws Exception {
         if (Sing_In.isDisplayed()) {
-            dashBoardXpath.clickOnAfterElementIsVisible(Sing_In);
+            clickOnAfterElementIsVisible(Sing_In);
             Thread.sleep(500);
-            try{
-                File src1=driver.findElement(By.xpath("//*[@alt='captcha']")).getScreenshotAs(OutputType.FILE);
-                String path="./Screenshots/capture.png";
-                FileHandler.copy(src1,new File(path));
-                ITesseract image1=new Tesseract();
+            try {
+                File src1 = driver.findElement(By.xpath("//*[@alt='captcha']")).getScreenshotAs(OutputType.FILE);
+                String path = "./Screenshots/capture.png";
+                FileHandler.copy(src1, new File(path));
+                ITesseract image1 = new Tesseract();
                 image1.setTessVariable("user_defined_dpi", "71");
                 Thread.sleep(500);
-                String imageText=image1.doOCR(new File(path));
-                System.out.println("imageText: "+imageText);
+                String imageText = image1.doOCR(new File(path));
+                System.out.println("imageText: " + imageText);
                 Thread.sleep(500);
-                String finalText=imageText.replaceAll("[^a-zA-z0-9]","");
-                System.out.println("finalText: "+finalText);
-                Thread.sleep(500);
-
-                String abc= JOptionPane.showInputDialog("Enter The capture");
-                System.out.println("Test Image: "+abc);
-                reader.setCellData("Login","Captcha",2,abc);
+                String finalText = imageText.replaceAll("[^a-zA-z0-9]", "");
+                System.out.println("finalText: " + finalText);
                 Thread.sleep(500);
 
-                dashBoardXpath.enterValue(CaptchaTextBox,CaptchaValue);
-                System.out.println("Captch value is: "+CaptchaValue);
+                String abc = JOptionPane.showInputDialog("Enter The capture");
+                System.out.println("Test Image: " + abc);
+                reader.setCellData("Login", "Captcha", 2, abc);
                 Thread.sleep(500);
-                dashBoardXpath.clickOn(Continue);
+
+                enterValue(CaptchaTextBox, CaptchaValue);
+                System.out.println("Captch value is: " + CaptchaValue);
+                Thread.sleep(500);
+                clickOn(Continue);
                 System.out.println("Continue button click");
                 Thread.sleep(500);
 
-                dashBoardXpath.enterValue(dashBoardXpath.Password,PasswordValue );
+                enterValue(Password, PasswordValue);
                 System.out.println(" Enter The Password is: " + PasswordValue);
                 Thread.sleep(500);
 
 
-            }catch (Exception e){
-                dashBoardXpath.enterValue(dashBoardXpath.Password, PasswordValue);
+            } catch (Exception e) {
+                enterValue(Password, PasswordValue);
                 Thread.sleep(500);
                 System.out.println(" Enter The Password is: " + PasswordValue);
             }
-        }else {
-            screenshot_File.Jatango(driver,"Password is captch not showing");
-            dashBoardXpath.enterValue(dashBoardXpath.Password,PasswordValue);
+        } else {
+            screenshot_File.Jatango(driver, "Password is captch not showing");
+            enterValue(Password, PasswordValue);
             System.out.println(" Enter The Password is captch not showing: " + PasswordValue);
             Thread.sleep(500);
 
@@ -158,7 +155,7 @@ public class LoginPage extends DriverManager {
         WebElement SingIn = Sing_In;
         try {
             if (SingIn.isDisplayed()) {
-                dashBoardXpath.clickOn(SingIn);
+                clickOn(SingIn);
                 System.out.println("************Click The Sing_In Button************");
                 Thread.sleep(500);
             } else {
@@ -186,58 +183,15 @@ public class LoginPage extends DriverManager {
 
         try {
             for (int i = 0; i < MyShopsList.size(); i++) {
-                dashBoardXpath.getDropDownValue(MyShopsList);
+                getDropDownValue(MyShopsList);
                 Thread.sleep(1000);
-                dashBoardXpath.iterateWebElementListAndSelectValue(MyShopsList,MyShopsValue);
-                System.out.println("MyShopsValue is: "+MyShopsValue);
+                iterateWebElementListAndSelectValue(MyShopsList, MyShopsValue);
+                System.out.println("MyShopsValue is: " + MyShopsValue);
             }
-        }catch (Exception e){
-            screenshot_File.Jatango(driver,"redirected");
-            System.out.println("User should not be redirected: "+e.getMessage());
+        } catch (Exception e) {
+            screenshot_File.Jatango(driver, "redirected");
+            System.out.println("User should not be redirected: " + e.getMessage());
         }
-    }
-
-    private static BufferedImage cropImage(File filePath, int x, int y, int w,
-                                           int h) {
-
-        try {
-            BufferedImage originalImgage = ImageIO.read(filePath);
-            BufferedImage subImgage = originalImgage.getSubimage(x, y, w, h);
-
-            return subImgage;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-    public static float getDiff(File f1, File f2, int width, int height) throws IOException {
-        BufferedImage bi1 = null;
-        BufferedImage bi2 = null;
-        bi1 = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-        bi2 = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-        bi1 = ImageIO.read(f1);
-        bi2 = ImageIO.read(f2);
-        float diff = 0;
-        for (int i = 0; i < width; i++) {
-            for (int j = 0; j < height; j++) {
-                int rgb1 = bi1.getRGB(i, j);
-                int rgb2 = bi2.getRGB(i, j);
-
-                int b1 = rgb1 & 0xff;
-                int g1 = (rgb1 & 0xff00) >> 8;
-                int r1 = (rgb1 & 0xff0000) >> 16;
-
-                int b2 = rgb2 & 0xff;
-                int g2 = (rgb2 & 0xff00) >> 8;
-                int r2 = (rgb2 & 0xff0000) >> 16;
-
-                diff += Math.abs(b1 - b2);
-                diff += Math.abs(g1 - g2);
-                diff += Math.abs(r1 - r2);
-            }
-        }
-        return diff;
     }
 
 }

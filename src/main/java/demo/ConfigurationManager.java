@@ -1,5 +1,9 @@
 package demo;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,7 +19,6 @@ public class ConfigurationManager {
         try {
             Properties prop = new Properties();
             String propFileName = "Jatango.properties";
-
             inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
 
             if (inputStream != null) {

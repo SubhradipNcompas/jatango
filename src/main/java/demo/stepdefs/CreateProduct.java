@@ -31,7 +31,7 @@ public class CreateProduct extends DriverManager {
     String docpath = dirPath + "/autoIt/resume.doc";
     SoftAssert softAssert = new SoftAssert();
     String ProductName=reader.getCellData("Product","ProductName",2);
-    String value=ProductName+dashBoardXpath.getRandombill(1000);
+    String value=ProductName+ getRandombill(1000);
     String Selectcategory=reader.getCellData("Product","SelectCategory",2);
     String SelectCategoryProduct =reader.getCellData("Product","SelectCategoryProduct",2);
     String SelectProduct = reader.getCellData("Product","SelectProduct",2);
@@ -42,14 +42,12 @@ public class CreateProduct extends DriverManager {
 
     @Given("User on the product creation page")
     public void user_on_the_product_creation_page() throws Throwable {
-
-        Thread.sleep(2000);
             if(CreateNewProduct.isDisplayed()){
-                dashBoardXpath.clickOn(CreateNewProduct);
+                clickOn(CreateNewProduct);
                 System.out.println(" User on the product creation page: "+CreateNewProduct.isDisplayed());
                 Thread.sleep(500);
                 System.out.println(" User on the product creation page: "+CreateProductNew.isDisplayed());
-                dashBoardXpath.clickOn(CreateProductNew);
+                clickOn(CreateProductNew);
                 Thread.sleep(500);
             }else {
                 System.out.println("User Not the view product creation page");
@@ -63,52 +61,52 @@ public class CreateProduct extends DriverManager {
     public void user_fill_in_the_product_details_with_valid_information()throws Throwable {
         try {
             //Upload Cover Photo
-            dashBoardXpath.clickOn(AddCoverPhoto);
+            clickOn(AddCoverPhoto);
             Runtime.getRuntime().exec("src/test/resources/All_PhotoAnd_Biodate/jatango.exe" + " " + " " + dirPath + "\\src\\test\\resources\\All_PhotoAnd_Biodate\\shopping.jpeg");
-            Thread.sleep(500);
-            dashBoardXpath.clickOn(CoverPhotoSave);
+            Thread.sleep(2000);
+            clickOn(CoverPhotoSave);
             System.out.println("User fill in the product details with valid information");
             Thread.sleep(500);
 
             //Product name * Field
-            dashBoardXpath.enterValue(EnterProductName, value);
+            enterValue(EnterProductName, value);
             System.out.println("Product name * Field: " + reader.setCellData("Product", "ProductNameData", 2, value));
             Thread.sleep(500);
 
             //Category * dropdown Value Select
             dashBoardXpath.moveToElementAndCLikOn(SelectCategory);
-            dashBoardXpath.iterateWebElementListAndSelectValue(allCategory, Selectcategory);
+            iterateWebElementListAndSelectValue(allCategory, Selectcategory);
             System.out.println("Category * dropdown Value SelectCategory: " + Selectcategory);
             Thread.sleep(500);
 
-            dashBoardXpath.iterateWebElementListAndSelectValue(allCategory, SelectCategoryProduct);
+            iterateWebElementListAndSelectValue(allCategory, SelectCategoryProduct);
             System.out.println("Category * dropdown Value SelectCategoryProduct: " + SelectCategoryProduct);
             Thread.sleep(500);
 
-            dashBoardXpath.iterateWebElementListAndSelectValue(allCategory, SelectProduct);
+            iterateWebElementListAndSelectValue(allCategory, SelectProduct);
             System.out.println("Category * dropdown Value SelectProduct: " + SelectProduct);
             Thread.sleep(500);
 
             //Price * required
-            dashBoardXpath.enterValue(Price, PriceDetails);
+            enterValue(Price, PriceDetails);
             System.out.println("Price * required: " + PriceDetails);
             Thread.sleep(500);
 
             //Weight * required
-            dashBoardXpath.enterValue(Weight, WeightValue);
+            enterValue(Weight, WeightValue);
             System.out.println("Weight * required: " + WeightValue);
             Thread.sleep(500);
 
             //Weight Estimate
 
-            dashBoardXpath.clickOn(WeightEstimate);
-            dashBoardXpath.getDropDownValue(WeightAllEstimate);
-            dashBoardXpath.iterateWebElementListAndSelectValue(WeightAllEstimate, Weight_Estimate);
+            clickOn(WeightEstimate);
+            getDropDownValue(WeightAllEstimate);
+            iterateWebElementListAndSelectValue(WeightAllEstimate, Weight_Estimate);
             System.out.println("Weight_Estimate is required: " + Weight_Estimate);
             Thread.sleep(500);
 
             //Quantity in stock *
-            dashBoardXpath.enterValue(Quantity_in_stock, Quantity);
+            enterValue(Quantity_in_stock, Quantity);
             System.out.println("Quantity in stock *: " + Quantity);
             Thread.sleep(500);
 
@@ -121,7 +119,7 @@ public class CreateProduct extends DriverManager {
     @When("User submit the product creation form")
     public void user_submit_the_product_creation_form() throws Throwable {
         if(PublishProduct.isDisplayed()){
-            dashBoardXpath.clickOn(PublishProduct);
+            clickOn(PublishProduct);
             System.out.println("User submit the product creation form");
             Thread.sleep(500);
         }else {
@@ -136,8 +134,8 @@ public class CreateProduct extends DriverManager {
     @Then("the new product should be listed in the product inventory")
     public void the_new_product_should_be_listed_in_the_product_inventory() throws Throwable {
             if(searchProduct.isDisplayed()){
-                dashBoardXpath.clickOn(searchProduct);
-                dashBoardXpath.enterValue(searchProduct,value);
+                clickOn(searchProduct);
+                enterValue(searchProduct,value);
                 System.out.println("the new product should be listed in the product inventory: "+ProductName);
                 Thread.sleep(3000);
 
