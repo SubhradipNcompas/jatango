@@ -46,8 +46,6 @@ public class LoginPage extends DriverManager {
     String imagePath = dirPath + "/autoIt/pic.jpeg";
     String docpath = dirPath + "/autoIt/resume.doc";
     SoftAssert softAssert = new SoftAssert();
-    //    String ExclePath=dirPath+"/autoIt/JobTitle.xlsx";
-//    xls_Reader reader1 = new xls_Reader(ExclePath);
     String MyShopsValue = reader.getCellData("Login", "MyShopsDashBoard", 2);
 
     // TestCase:-1
@@ -66,9 +64,9 @@ public class LoginPage extends DriverManager {
     @When("Enter Username")
     public void enter_username() throws Exception {
         dashBoardXpath.moveToElementAndCLikOn(Log_In);
-        Thread.sleep(3000);
+        Thread.sleep(500);
         dashBoardXpath.enterValue(dashBoardXpath.Username, reader.getCellData("Login", "USERNAME", 2));
-        Thread.sleep(5000);
+        Thread.sleep(500);
         System.out.println("   Enter UserName is:  " + reader.getCellData("Login", "USERNAME", 2));
         try {
             File src1=driver.findElement(By.xpath("//*[@alt='captcha']")).getScreenshotAs(OutputType.FILE);
@@ -82,18 +80,18 @@ public class LoginPage extends DriverManager {
             Thread.sleep(500);
             String finalText=imageText.replaceAll("[^a-zA-z0-9]","");
             System.out.println("finalText: "+finalText);
-            Thread.sleep(5000);
+            Thread.sleep(500);
 
             String abc= JOptionPane.showInputDialog("Enter The capture");
             System.out.println("Test Image: "+abc);
             reader.setCellData("Login","Captcha",2,abc);
-            Thread.sleep(2000);
+            Thread.sleep(500);
             String xyz=reader.getCellData("Login","Captcha",2);
             dashBoardXpath.enterValue(CaptchaTextBox,xyz);
             System.out.println("Captch value is: "+xyz);
-            Thread.sleep(2000);
+            Thread.sleep(500);
             dashBoardXpath.clickOn(Continue);
-            Thread.sleep(8000);
+            Thread.sleep(500);
         } catch (Exception e) {
             System.out.println("CaptchaTextBox not view: " + e.getMessage());
             screenshot_File.Jatango(driver,"CaptchaTextBox not view");
@@ -105,40 +103,71 @@ public class LoginPage extends DriverManager {
     public void enter_password() throws Exception {
         if (Sing_In.isDisplayed()) {
             dashBoardXpath.clickOnAfterElementIsVisible(Sing_In);
-            Thread.sleep(3000);
-            dashBoardXpath.enterValue(dashBoardXpath.Password, reader.getCellData("Login", "PASSWORD", 2));
-            Thread.sleep(3000);
-            System.out.println(" Enter The Password is: " + reader.getCellData("Login", "PASSWORD", 2));
-        } else {
+            Thread.sleep(500);
+            try{
+                File src1=driver.findElement(By.xpath("//*[@alt='captcha']")).getScreenshotAs(OutputType.FILE);
+                String path="./Screenshots/capture.png";
+                FileHandler.copy(src1,new File(path));
+                ITesseract image1=new Tesseract();
+                image1.setTessVariable("user_defined_dpi", "71");
+                Thread.sleep(500);
+                String imageText=image1.doOCR(new File(path));
+                System.out.println("imageText: "+imageText);
+                Thread.sleep(500);
+                String finalText=imageText.replaceAll("[^a-zA-z0-9]","");
+                System.out.println("finalText: "+finalText);
+                Thread.sleep(500);
+
+                String abc= JOptionPane.showInputDialog("Enter The capture");
+                System.out.println("Test Image: "+abc);
+                reader.setCellData("Login","Captcha",2,abc);
+                Thread.sleep(500);
+                String xyz=reader.getCellData("Login","Captcha",2);
+                dashBoardXpath.enterValue(CaptchaTextBox,xyz);
+                System.out.println("Captch value is: "+xyz);
+                Thread.sleep(500);
+                dashBoardXpath.clickOn(Continue);
+                Thread.sleep(500);
+
+                dashBoardXpath.enterValue(dashBoardXpath.Password, reader.getCellData("Login", "PASSWORD", 2));
+                Thread.sleep(500);
+                System.out.println(" Enter The Password is: " + reader.getCellData("Login", "PASSWORD", 2));
+
+            }catch (Exception e){
+                dashBoardXpath.enterValue(dashBoardXpath.Password, reader.getCellData("Login", "PASSWORD", 2));
+                Thread.sleep(500);
+                System.out.println(" Enter The Password is: " + reader.getCellData("Login", "PASSWORD", 2));
+            }
+        }else {
             screenshot_File.Jatango(driver,"Password is captch not showing");
             dashBoardXpath.enterValue(dashBoardXpath.Password, reader.getCellData("Login", "PASSWORD", 2));
             System.out.println(" Enter The Password is captch not showing: " + reader.getCellData("Login", "PASSWORD", 2));
-            Thread.sleep(3000);
+            Thread.sleep(500);
 
         }
     }
 
     @Then("Click Sing_In")
     public void click_sing_in() throws Exception {
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         WebElement SingIn = Sing_In;
         try {
             if (SingIn.isDisplayed()) {
                 dashBoardXpath.clickOn(SingIn);
                 System.out.println("************Click The Sing_In Button************");
-                Thread.sleep(5000);
+                Thread.sleep(1000);
             } else {
                 System.out.println("************Click The Sing_In Button Related Issue************");
-                Thread.sleep(3000);
+                Thread.sleep(1000);
             }
         } catch (Exception e) {
             System.out.println("Sign_in button not view");
             screenshot_File.Jatango(driver, "Sign_in button not view");
             Assert.assertTrue(true, "Sign_in button not view");
-            Thread.sleep(3000);
+            Thread.sleep(1000);
         }
 
-        Thread.sleep(5000);
+        Thread.sleep(1000);
     }
 
     @Then("User should be redirected to the homepage")
@@ -147,17 +176,17 @@ public class LoginPage extends DriverManager {
         String LoginURL = TestBase.URL;
         softAssert.assertEquals(CurrentURL, LoginURL);
         System.out.println("Login Successful");
-        Thread.sleep(3000);
+        Thread.sleep(1000);
         System.out.println("Title Verify: " + driver.getTitle());
         try {
             for (int i = 0; i < MyShopsList.size(); i++) {
-                Thread.sleep(2000);
+                Thread.sleep(500);
                 dashBoardXpath.getDropDownValue(MyShopsList);
-                Thread.sleep(2000);
-                if (dashBoardXpath.getDropDownValue(MyShopsList).equals(MyShopsValue)) ;
-                Thread.sleep(2000);
+                Thread.sleep(500);
+                if (!dashBoardXpath.getDropDownValue(MyShopsList).equals(MyShopsValue)) ;
+                Thread.sleep(500);
                 dashBoardXpath.iterateWebElementListAndSelectValue(MyShopsList, MyShopsValue);
-                Thread.sleep(2000);
+                Thread.sleep(500);
             }
         }catch (Exception e){
             screenshot_File.Jatango(driver,"redirected");
