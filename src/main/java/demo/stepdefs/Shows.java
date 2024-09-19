@@ -41,9 +41,8 @@ public class Shows extends DriverManager {
     public void the_user_navigates_to_the_shows_creation_page() throws Throwable {
         if(CreateNewProduct.isDisplayed()){
             dashBoardXpath.clickOn(CreateNewProduct);
-            System.out.println(" the user navigates to the shows creation pag: "+CreateNewProduct.isDisplayed());
             Thread.sleep(3000);
-            System.out.println(" the user navigates to the shows creation pag: "+CreateShow.getText());
+            System.out.println(" the user navigates to the shows creation page: "+CreateShow.getText());
             dashBoardXpath.clickOn(CreateShow);
             Thread.sleep(5000);
         }else {
@@ -111,10 +110,12 @@ public class Shows extends DriverManager {
         try {
             String LiveDemo = reader.getCellData("Shows", "LiveURLLink", 2);
             String Test = "https://" + LiveDemo;
+            Thread.sleep(2000);
             driver.navigate().to(Test);
+            Thread.sleep(2000);
         }catch (Exception e){
             screenshot_File.Jatango(driver,"LiveDemo");
-            System.out.println("the user not pastes the link in the browser"+e.getMessage());
+            System.out.println("the user not pastes the link in the browser: "+e.getMessage());
         }
     }
 
@@ -124,7 +125,7 @@ public class Shows extends DriverManager {
         if (CurrentTitle.equals("Jatango")) {
             softAssert.assertTrue(true, CurrentTitle);
             System.out.println("the user should see the newly created show page: " + CurrentTitle);
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         }else {
             screenshot_File.Jatango(driver,"CurrentTitle");
             System.out.println("the user should not see the newly created show page");

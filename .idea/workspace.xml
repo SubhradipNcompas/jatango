@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="19th commite">
+    <list default="true" id="3efb6bdd-0568-4e4d-8840-28ee79b6f6a2" name="Changes" comment="20th commite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/Jatango.html" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/Jatango.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reports/PdfReport/Jatango.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Reports/PdfReport/Jatango.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Screenshots/CaptchaTextBox not view.png" beforeDir="false" afterPath="$PROJECT_DIR$/Screenshots/CaptchaTextBox not view.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pageObject/projectAllXpath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pageObject/projectAllXpath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/CreateProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/CreateProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/stepdefs/Shows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/stepdefs/Shows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Data.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +96,7 @@
       <recent name="demo.pageObject" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="JUnit.shows">
     <configuration name="Testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo.stepdefs.Testing" />
       <module name="Jatango" />
@@ -165,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.shows" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Application.Testing" />
         <item itemvalue="JUnit.login" />
         <item itemvalue="JUnit.product" />
-        <item itemvalue="JUnit.shows" />
       </list>
     </recent_temporary>
   </component>
@@ -390,7 +397,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726666134594</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="20th commite">
+      <option name="closed" value="true" />
+      <created>1726727010513</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1726727010513</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -423,6 +438,7 @@
     <MESSAGE value="17th commit" />
     <MESSAGE value="18th commit" />
     <MESSAGE value="19th commite" />
-    <option name="LAST_COMMIT_MESSAGE" value="19th commite" />
+    <MESSAGE value="20th commite" />
+    <option name="LAST_COMMIT_MESSAGE" value="20th commite" />
   </component>
 </project>

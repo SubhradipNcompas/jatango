@@ -43,19 +43,19 @@ public class CreateProduct extends DriverManager {
     @Given("User on the product creation page")
     public void user_on_the_product_creation_page() throws Throwable {
 
-        Thread.sleep(8000);
+        Thread.sleep(5000);
             if(CreateNewProduct.isDisplayed()){
                 dashBoardXpath.clickOn(CreateNewProduct);
                 System.out.println(" User on the product creation page: "+CreateNewProduct.isDisplayed());
                 Thread.sleep(1000);
                 System.out.println(" User on the product creation page: "+CreateProductNew.isDisplayed());
                 dashBoardXpath.clickOn(CreateProductNew);
-                Thread.sleep(1000);
+                Thread.sleep(3000);
             }else {
                 System.out.println("User Not the view product creation page");
                 screenshot_File.Jatango(driver,"CreatePage Not View");
                 softAssert.assertTrue(true,"CreatePage Not View");
-                Thread.sleep(3000);
+                Thread.sleep(1000);
             }
     }
 
@@ -73,31 +73,31 @@ public class CreateProduct extends DriverManager {
             //Product name * Field
             dashBoardXpath.enterValue(EnterProductName, value);
             System.out.println("Product name * Field: " + reader.setCellData("Product", "ProductNameData", 2, value));
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             //Category * dropdown Value Select
             dashBoardXpath.moveToElementAndCLikOn(SelectCategory);
             dashBoardXpath.iterateWebElementListAndSelectValue(allCategory, Selectcategory);
             System.out.println("Category * dropdown Value SelectCategory: " + Selectcategory);
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             dashBoardXpath.iterateWebElementListAndSelectValue(allCategory, SelectCategoryProduct);
             System.out.println("Category * dropdown Value SelectCategoryProduct: " + SelectCategoryProduct);
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             dashBoardXpath.iterateWebElementListAndSelectValue(allCategory, SelectProduct);
             System.out.println("Category * dropdown Value SelectProduct: " + SelectProduct);
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             //Price * required
             dashBoardXpath.enterValue(Price, PriceDetails);
             System.out.println("Price * required: " + PriceDetails);
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             //Weight * required
             dashBoardXpath.enterValue(Weight, WeightValue);
             System.out.println("Weight * required: " + WeightValue);
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             //Weight Estimate
 
@@ -105,16 +105,17 @@ public class CreateProduct extends DriverManager {
             dashBoardXpath.getDropDownValue(WeightAllEstimate);
             dashBoardXpath.iterateWebElementListAndSelectValue(WeightAllEstimate, Weight_Estimate);
             System.out.println("Weight_Estimate is required: " + Weight_Estimate);
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
             //Quantity in stock *
             dashBoardXpath.enterValue(Quantity_in_stock, Quantity);
             System.out.println("Quantity in stock *: " + Quantity);
-            Thread.sleep(3000);
+            Thread.sleep(2000);
 
         }catch (Exception e){
             System.out.println("User not fill in the product details with valid information"+e.getMessage());
             screenshot_File.Jatango(driver,"not valid Information");
+            Thread.sleep(2000);
         }
     }
     @When("User submit the product creation form")
@@ -122,12 +123,12 @@ public class CreateProduct extends DriverManager {
         if(PublishProduct.isDisplayed()){
             dashBoardXpath.clickOn(PublishProduct);
             System.out.println("User submit the product creation form");
-            Thread.sleep(8000);
+            Thread.sleep(2000);
         }else {
             System.out.println("User not submit the product creation form");
             screenshot_File.Jatango(driver,"submit button issue product creation");
             softAssert.assertTrue(true,"User not submit the product creation form");
-            Thread.sleep(8000);
+            Thread.sleep(2000);
         }
     }
 

@@ -54,7 +54,7 @@ public class projectAllXpath extends userHomePage {
     public static WebElement CreateNewProduct;
     @FindBy(how = How.XPATH, using = "//*[text()='Create product']")
     public static WebElement CreateProductNew;
-    @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[3]/div[4]/div[1]/div[1]/div[1]/button[1]")
+    @FindBy(how = How.XPATH, using = "//*[text()='Create show']")
     public static WebElement CreateShow;
     @FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/form[1]/div[1]/div[1]/button[1]/span[1]")
     public static WebElement AddCoverPhoto;
