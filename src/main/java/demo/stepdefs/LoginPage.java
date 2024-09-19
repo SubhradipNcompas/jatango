@@ -189,7 +189,6 @@ public class LoginPage extends DriverManager {
                 Thread.sleep(1000);
                 dashBoardXpath.iterateWebElementListAndSelectValue(MyShopsList,MyShopsValue);
                 System.out.println("MyShopsValue is: "+MyShopsValue);
-                Thread.sleep(1000);
             }
         }catch (Exception e){
             screenshot_File.Jatango(driver,"redirected");

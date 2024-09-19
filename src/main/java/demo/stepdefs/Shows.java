@@ -110,6 +110,7 @@ public class Shows extends DriverManager {
         try {
             String LiveDemo = reader.getCellData("Shows", "LiveURLLink", 2);
             String Test = "https://" + LiveDemo;
+            reader.setCellData("Shows", "LiveURLLink", 2,Test);
             Thread.sleep(2000);
             driver.navigate().to(Test);
             Thread.sleep(2000);
@@ -125,6 +126,7 @@ public class Shows extends DriverManager {
         if (CurrentTitle.equals("Jatango")) {
             softAssert.assertTrue(true, CurrentTitle);
             System.out.println("the user should see the newly created show page: " + CurrentTitle);
+            System.out.println("the user should see the newly created show page: " + driver.getCurrentUrl());
             Thread.sleep(2000);
         }else {
             screenshot_File.Jatango(driver,"CurrentTitle");
