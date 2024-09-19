@@ -56,6 +56,7 @@ public class LoginPage extends DriverManager {
         ScreenRecorderUtil.startRecord("URL open");
         try {
             driver.get(prop.getPropValues(TestBase.URL));
+            System.out.println("Open URL is : "+TestBase.URL);
             Thread.sleep(8000);
         }catch (Exception e){
             System.out.println("Enter application URL in address bar is not working");
@@ -153,25 +154,25 @@ public class LoginPage extends DriverManager {
 
     @Then("Click Sing_In")
     public void click_sing_in() throws Exception {
-        Thread.sleep(1000);
+        Thread.sleep(500);
         WebElement SingIn = Sing_In;
         try {
             if (SingIn.isDisplayed()) {
                 dashBoardXpath.clickOn(SingIn);
                 System.out.println("************Click The Sing_In Button************");
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } else {
                 System.out.println("************Click The Sing_In Button Related Issue************");
-                Thread.sleep(1000);
+                Thread.sleep(500);
             }
         } catch (Exception e) {
             System.out.println("Sign_in button not view");
             screenshot_File.Jatango(driver, "Sign_in button not view");
             Assert.assertTrue(true, "Sign_in button not view");
-            Thread.sleep(1000);
+            Thread.sleep(500);
         }
 
-        Thread.sleep(1000);
+        Thread.sleep(500);
     }
 
     @Then("User should be redirected to the homepage")
